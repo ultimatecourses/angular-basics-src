@@ -1,0 +1,87 @@
+* {
+  font-family: "Patua One", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #c14583;
+  color: #01a3a4;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #01a3a4;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  span {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+.input {
+  background-color: #f7f7f7;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  padding: 10px 15px;
+  outline: 0;
+  width: 100%;
+  font-size: 14px;
+  &:focus {
+    border-color: #e3e3e3;
+  }
+  &--select {
+    background-image: url("/assets/img/icon/down.svg");
+    background-position: 98% center;
+    background-repeat: no-repeat;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  &--textarea {
+    resize: vertical;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: 0;
+  border-radius: 4px;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  &--grey {
+    background: #f7f7f7;
+    color: #444;
+  }
+  &--green {
+    background: #01a3a4;
+    color: #fff;
+  }
+  &:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+  }
+  &:disabled {
+    cursor: no-drop;
+  }
+}
+
+//  Angular Related Styles
+form .ng-invalid.ng-touched {
+  background: #ffe7e7;
+  border-color: #e66262;
+}
